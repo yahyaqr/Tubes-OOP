@@ -1,4 +1,4 @@
-public class stats{
+public class Stats{
     private double HP;
     private double att;
     private double def;
@@ -6,7 +6,7 @@ public class stats{
     private double spdef;
     private double speed;
 
-    public stats(double HP, double att, double def, double spatt, double spdef, double speed){
+    public Stats(double HP, double att, double def, double spatt, double spdef, double speed){
         this.HP=HP; this.att=att; this.def=def; this.spatt=spatt; this.spdef=spdef; this.speed=speed;
     }
     public double getHP(){
