@@ -1,4 +1,5 @@
-public class Stats{
+import java.util.Random;  
+public class Stats implements Statcon{
     private double HP;
     private double att;
     private double def;
@@ -39,6 +40,21 @@ public class Stats{
         d = (int) java.lang.Math.floor(speed);
         return d;
     }
+    public void burn(double HP, double att){
+        HP = HP*1/8; att = att*1/2;
+    }
+    public void poison(double HP){
+        HP = 1/16*HP;
+    }
+    public void sleep(int x){
+        x = (int) (Math.random() * 7) + 1;
+    }
+    public void paralyze(double speed, boolean y){
+        speed = speed*1/2;
+        Random rand = new Random();
+        y = rand.nextDouble() < 0.75;
+    }
+
     public void cetak(){
         System.out.println("HP: "+ getHP());
         System.out.println("Attack: "+getAtt());
