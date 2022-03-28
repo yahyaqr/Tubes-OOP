@@ -56,6 +56,7 @@ public class Stats implements Statcon{
     }
 
     public void cetak(){
+        System.out.println("STATS");
         System.out.println("HP: "+ getHP());
         System.out.println("Attack: "+getAtt());
         System.out.println("Defense: "+getDef());
