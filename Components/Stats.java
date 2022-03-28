@@ -52,7 +52,7 @@ public class Stats implements Statcon{
     public void paralyze(double speed, boolean y){
         speed = speed*1/2;
         Random rand = new Random();
-        y = rand.nextDouble() < 0.75;
+        y = rand.nextDouble() < 0.25;
     }
 
     public void cetak(){
