@@ -11,33 +11,33 @@ public class Stats implements Statcon{
         this.HP=HP; this.att=att; this.def=def; this.spatt=spatt; this.spdef=spdef; this.speed=speed;
     }
     public double getHP(){
-        int d;
-        d = (int) java.lang.Math.floor(HP);
+        double d;
+        d = (Double) java.lang.Math.floor(HP);
         return d;
     }
     public double getAtt() {
-        int d;
-        d = (int) java.lang.Math.floor(att);
+        double d;
+        d = (Double) java.lang.Math.floor(att);
         return d;
     }
     public double getDef() {
-        int d;
-        d = (int) java.lang.Math.floor(def);
+        double d;
+        d = (Double) java.lang.Math.floor(def);
         return d;
     }
     public double getspatt(){
-        int d;
-        d = (int) java.lang.Math.floor(spatt);
+        double d;
+        d = (Double) java.lang.Math.floor(spatt);
         return d;
     }
     public double getspdef(){
-        int d;
-        d = (int) java.lang.Math.floor(spdef);
+        double d;
+        d = (Double) java.lang.Math.floor(spdef);
         return d;
     }
     public double getspeed(){
-        int d;
-        d = (int) java.lang.Math.floor(speed);
+        double d;
+        d = (Double) java.lang.Math.floor(speed);
         return d;
     }
     public void burn(double HP, double att){
