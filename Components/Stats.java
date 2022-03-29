@@ -1,5 +1,5 @@
 import java.util.Random;  
-public class Stats implements Statcon{
+public class Stats{
     private double HP;
     private double att;
     private double def;
